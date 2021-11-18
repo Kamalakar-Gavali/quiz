@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+@import 'https://fonts.googleapis.com/css2?family=Material+Icons';
+
 .App {
   text-align: center;
 }
@@ -35,4 +38,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+.olStyle{
+
+  border: 2px solid rgba(96, 102, 208, 0.7);
+box-sizing: border-box;
+border-radius: 12px;
+color: rgba(96, 102, 208, 0.7)
+}
+.olStyle::before{
+  
+    content: counter(item)        "    "; 
+    counter-increment: item 
+}
+.correct{
+  background: #60BF88 !important;  
+  border-color:  #60BF88 !important;  
+  color: white;
+}
+.incorrect{
+  color: white;
+  background: #EA8282;
+  border-color: #EA8282;
 }
